@@ -1,7 +1,7 @@
 // src/app.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { RecadoModule } from './Recado/recado.module';
+import { RecadoModule } from './recado/recado.module';
 import { Client } from 'pg';
 
 @Module({

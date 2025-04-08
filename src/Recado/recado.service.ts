@@ -29,6 +29,8 @@ export class RecadoService {
   }
 
   async findAll(): Promise<Recado[]> {
-    return this.recadoRepository.find();
+    const result = this.recadoRepository.find();
+    console.log(result, 'myresult')
+    return result
   }
 }

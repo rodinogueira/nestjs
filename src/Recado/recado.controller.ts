@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { RecadoService } from './recado.service';
 
-@Controller('Recado')
+@Controller('recado')
 export class RecadoController {
   constructor(private readonly recadoService: RecadoService) {}
 

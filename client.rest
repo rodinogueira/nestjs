@@ -1,7 +1,11 @@
-POST http://localhost:3000/users
+POST http://localhost:3000/recado
 Content-Type: application/json
 
-{
-  "name": "João",
-  "email": "joao@email.com"
-}
+  {
+    "id": 1,
+    "texto": "Reunião às 10h",
+    "de": "João",
+    "para": "Maria",
+    "lido": false,
+    "data": "2025-04-08T10:00:00.000Z"
+  }
