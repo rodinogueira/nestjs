@@ -1,3 +1,5 @@
+GET http://localhost:3000/recado
+
 POST http://localhost:3000/recado
 Content-Type: application/json
 
@@ -9,3 +11,4 @@ Content-Type: application/json
     "lido": false,
     "data": "2025-04-08T10:00:00.000Z"
   }
+  
