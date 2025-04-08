@@ -36,4 +36,7 @@ export class Recado {
 
   @UpdateDateColumn()
   updatedAt?: Date;
+
+  @Column({ nullable: true })
+  testeTemporario?: string;
 }
