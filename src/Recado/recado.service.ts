@@ -14,7 +14,7 @@ export class RecadoService {
     id:number,
     texto:string,
     de:string,
-    para:boolean,
+    para:string,
     lido:boolean,
     data:Date ): Promise<Recado> {
     const recado = this.recadoRepository.create({ 

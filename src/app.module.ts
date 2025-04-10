@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { RecadoModule } from './recado/recado.module';
 import { Client } from 'pg';
+import { Recado } from './entities/recado.entity';
 
 @Module({
   imports: [
@@ -15,6 +16,8 @@ import { Client } from 'pg';
           user: 'postgres',
           password: '456123',
           database: 'postgres',
+          entities: [Recado],
+          synchronize: true,
         });
 
         await client.connect();

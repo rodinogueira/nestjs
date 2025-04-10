@@ -22,8 +22,8 @@ export class Recado {
   @Column()
   de:string;
 
-  @Column()
-  para:boolean;
+  @Column({ type: 'varchar', nullable: false })
+  para: string;  
 
   @Column({ default: false })
   lido:boolean;

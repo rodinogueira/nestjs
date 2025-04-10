@@ -1,14 +1,60 @@
-GET http://localhost:3000/recado
-
+### Criar um novo recado (CREATE)
 POST http://localhost:3000/recado
 Content-Type: application/json
 
+{
+  "texto": "Reunião às 16h",
+  "de": "Rodrigo",
+  "para": "Nogueira",
+  "lido": false,
+  "data": "2025-04-09T15:00:00.000Z"
+}
+
+###
+
+### Criar múltiplos recados
+POST http://localhost:3000/recado/many
+Content-Type: application/json
+
+[
   {
-    "id": 1,
-    "texto": "Reunião às 10h",
-    "de": "João",
-    "para": "Maria",
+    "texto": "Reunião às 15h",
+    "de": "Rodrigo",
+    "para": "Nogueira",
     "lido": false,
-    "data": "2025-04-08T10:00:00.000Z"
+    "data": "2025-04-09T15:00:00.000Z"
+  },
+  {
+    "texto": "Relatório entregue",
+    "de": "Amanda",
+    "para": "Carlos",
+    "lido": false,
+    "data": "2025-04-10T09:00:00.000Z"
   }
-  
+]
+
+###
+
+### Listar todos os recados (READ ALL)
+GET http://localhost:3000/recado
+
+###
+
+### Buscar recado por ID (READ ONE)
+GET http://localhost:3000/recado/1
+
+###
+
+### Atualizar um recado (UPDATE)
+PUT http://localhost:3000/recado/1
+Content-Type: application/json
+
+{
+  "texto": "Reunião alterada para 20h",
+  "lido": true
+}
+
+###
+
+### Deletar um recado (DELETE)
+DELETE http://localhost:3000/recado/1

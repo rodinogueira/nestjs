@@ -10,7 +10,7 @@ export class RecadoController {
     id:number;
     texto:string;
     de:string;
-    para:boolean;
+    para:string;
     lido:boolean;
     data:Date }) {
     return this.recadoService.createRecado(
